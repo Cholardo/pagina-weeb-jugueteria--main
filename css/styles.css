@@ -61,6 +61,29 @@ font-family: Arial, sans-serif;
   transform: translateY(-10px);
   box-shadow: 0 10px 25px rgba(123, 44, 191, 0.3);
 }
-.hero-nosotros {
+.hero-baner {
   background: linear-gradient(to right, #b271eb, purple);
 }
+.custom-card {
+  border: none;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+
+.custom-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(111, 66, 193, 0.3);
+}
+
+
+.stats {
+  background: #f3f0ff;
+}
+
+.stats h2 {
+  color: #6f42c1;
+}
+
+
+/* BOTON */
