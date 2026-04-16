@@ -1,0 +1,66 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  color: purple;
+}
+.logo img {
+  height: 2.5rem;
+  width: auto;
+}
+.nav-item {
+font-family: Arial, sans-serif;
+  color: purple;
+}
+.navbar-toggler {
+    border-color: #6A0DAD ;
+    background-color: #6A0DAD;
+}
+.text-purple {
+  color: #7b2cbf;
+}
+
+.btn-purple {
+  background: linear-gradient(45deg, #7b2cbf, #9d4edd);
+  color: white;
+  border: none;
+}
+
+.btn-purple:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-purple {
+  border: 2px solid #7b2cbf;
+  color: #7b2cbf;
+}
+
+.btn-outline-purple:hover {
+  background: #7b2cbf;
+  color: white;
+}
+
+
+.hero-section {
+  background: linear-gradient(to right, #f3e8ff, #ffffff);
+}
+
+
+.card-hover {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 12px;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(123, 44, 191, 0.3);
+}
+.hero-nosotros {
+  background: linear-gradient(to right, #b271eb, purple);
+}
