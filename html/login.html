@@ -10,70 +10,100 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     </head>
-    <body>
+    
+    <body class="bg-dark min-vh-100 d-flex flex-column">
 
-        <footer class="bg-dark text-light pt-5 pb-3">
-
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-3 mb-4">
-        <h5 class="fw-bold text-primary">Juguetes Yeny</h5>
-        <p class="small">
-          Diversión en cada pieza. Tu tienda de confianza para juguetes al por mayor y menor.
-        </p>
-
-        <div class="d-flex gap-3">
-          <a href="https://wa.link/r8do8g" target="_blank" class="text-light">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-          <a href="#" class="text-light">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="#" class="text-light">
-            <i class="bi bi-instagram"></i>
-          </a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+                <img src="../imagenes/logo-yeny.png" alt="Logo" height="40" />
+                <span class="fw-bold fs-5 text-warning">Juguetes Yeny</span>
+            </a>
         </div>
-      </div>
-   
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold text-primary">Enlaces Rápidos</h6>
-        <ul class="list-unstyled">
-          <li><a href="../index.html" class="text-light text-decoration-none">Inicio</a></li>
-          <li><a href="nosotros.html" class="text-light text-decoration-none">Nosotros</a></li>
-          <li><a href="catalogo.html" class="text-light text-decoration-none">Catálogo</a></li>
-          <li><a href="contacto.html" class="text-light text-decoration-none">Contacto</a></li>
-        </ul>
-      </div>
+    </nav>
 
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold text-primary">Mi Cuenta</h6>
-        <ul class="list-unstyled">
-          <li><a href="login.html" class="text-light text-decoration-none">Iniciar Sesión</a></li>
-          <li><a href="#" class="text-light text-decoration-none">Registrarse</a></li>
-        </ul>
-      </div>
+    <div class="container flex-grow-1 d-flex align-items-center justify-content-center py-5">
+        <div class="row w-100 justify-content-center g-0 shadow rounded-4 overflow-hidden" style="max-width: 900px;">
 
-      <div class="col-md-3 mb-4">
-        <h6 class="fw-bold text-primary">Contacto</h6>
-        <p class="small mb-1">Av. Ayacucho 380</p>
-        <p class="small mb-1">Teléfono: 943 137 626</p>
-        <p class="small">Lun - Sáb: 9AM - 10PM</p>
+            <div class="col-lg-6 d-none d-lg-block position-relative">
+                <img src="../imagenes/imagenes de otro sitio/papa e hijo.jpg"
+                    alt="Padre saliendo de la tienda con su hija después de una compra"
+                    class="w-100 h-100 object-fit-cover" />
+                <div class="position-absolute bottom-0 start-0 p-4 bg-dark bg-opacity-50 w-100">
+                    <p class="text-warning fw-bold mb-0 fs-5">¡Bienvenido de nuevo!</p>
+                    <p class="text-white small mb-0">Los mejores juguetes te esperan.</p>
+                </div>
+            </div>
 
-        <a href="https://wa.link/r8do8g" target="_blank" class="btn btn-primary btn-sm mt-2 w-100">
-          Escríbenos por WhatsApp
-        </a>
-      </div>
+            
+            <div class="col-12 col-lg-6 bg-dark p-4 p-md-5">
 
-    </div>
+                <div class="mb-4">
+                    <img src="../imagenes/logo-yeny.png" height="36" alt="Logo" class="mb-3" />
+                    <h4 class="text-white fw-bold mb-1">Inicia sesión</h4>
+                    <p class="text-secondary small">Ingresa a tu cuenta para continuar</p>
+                </div>
 
-    <hr class="border-light">
+                <form>
 
-    <div class="text-center small">
-      © 2025 Juguetes Yeny. Todos los derechos reservados.
-    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label text-secondary small">Correo electrónico</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-secondary border-secondary text-white">
+                                <i class="bi bi-envelope"></i>
+                            </span>
+                            <input type="email" class="form-control bg-secondary border-secondary text-white"
+                                placeholder="tucorreo@ejemplo.com" />
+                        </div>
+                    </div>
 
-  </div>
-        </footer>   
-    </body>
+                    
+                    <div class="mb-2">
+                        <label class="form-label text-secondary small">Contraseña</label>
+                        <div class="input-group">
+                            <span class="input-group-text bg-secondary border-secondary text-white">
+                                <i class="bi bi-lock"></i>
+                            </span>
+                            <input type="password" id="inputPassword"
+                                class="form-control bg-secondary border-secondary text-white" placeholder="••••••••" />
+                            <button class="btn btn-secondary border-secondary" type="button" onclick="togglePassword()">
+                                <i class="bi bi-eye" id="iconoOjo"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="text-end mb-4">
+                        <a href="#" class="text-warning small text-decoration-none">¿Olvidaste tu contraseña?</a>
+                    </div>
+
+                    
+                    <button type="submit" class="btn btn-warning w-100 fw-bold py-2 mb-3">
+                        <i class="bi bi-box-arrow-in-right me-1"></i> Ingresar
+                    </button>
+
+                    <a href="../index.html" class="btn btn-outline-warning w-100 fw-bold py-2 mb-3">
+                        <i class="bi bi-person-walking me-1"></i> Ingresar como invitado
+                    </a>
+
+                    <!-- Divisor -->
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <hr class="flex-grow-1 border-secondary" />
+                        <span class="text-secondary small">o</span>
+                        <hr class="flex-grow-1 border-secondary" />
+                    </div>
+
+                    
+                    <p class="text-center text-secondary small mb-0">
+                        ¿No tienes cuenta?
+                        <a href="#" class="text-warning text-decoration-none">Regístrate aquí</a>
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </div>   
+  </body>
 </html>
